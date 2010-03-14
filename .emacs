@@ -23,6 +23,9 @@
 (load "~/emacs/mk-uniquify.el")
 (load "~/emacs/mk-eproject.el")
 
+;; vcs
+(load "~/emacs/mk-git.el")
+(load "~/emacs/mk-darcs.el")
 
 ;; load saved sessions afterall
 (load "~/emacs/mk-desktop.el")
