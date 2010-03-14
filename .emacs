@@ -33,8 +33,9 @@
 
 ;; programming
 (load "~/emacs/mk-sqlplus.el")
-
-
+(load "~/emacs/mk-j.el")
+(load "~/emacs/mk-erlang.el")
+(load "~/emacs/mk-haskell.el")
 
 ;; load saved sessions afterall
 (load "~/emacs/mk-desktop.el")

@@ -7,3 +7,6 @@
 [submodule "lib/egg"]
 	path = lib/egg
 	url = git://github.com/bogolisk/egg.git
+[submodule "lib/haskell-mode"]
+	path = lib/haskell-mode
+	url = git://github.com/jwiegley/haskell-mode.git
