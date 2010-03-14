@@ -35,6 +35,10 @@
  '(require-final-newline t)
 )
 
+(setq split-width-threshold nil)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+
 ;; some hooks
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
