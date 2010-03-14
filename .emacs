@@ -31,6 +31,11 @@
 (load "~/emacs/mk-org-mode.el")
 (load "~/emacs/mk-remember.el")
 
+;; programming
+(load "~/emacs/mk-sqlplus.el")
+
+
+
 ;; load saved sessions afterall
 (load "~/emacs/mk-desktop.el")
 
