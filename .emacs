@@ -27,6 +27,10 @@
 (load "~/emacs/mk-git.el")
 (load "~/emacs/mk-darcs.el")
 
+;; gtd
+(load "~/emacs/mk-org-mode.el")
+(load "~/emacs/mk-remember.el")
+
 ;; load saved sessions afterall
 (load "~/emacs/mk-desktop.el")
 

@@ -1,5 +1,5 @@
-;;; EProject
-
+;; load paths
+(add-to-list 'load-path "~/emacs/lib/eproject")
 (require 'eproject)
 (require 'eproject-extras)
 
@@ -29,8 +29,9 @@
   (or (look-for ".git") (look-for "src"))
   :relevant-files ("\\.hrl$" "\\.erl$" "\\.app$" "\\.edoc$" "\\.c$" "\\.h$"))
 
-(defun mk/erlang-project-hook ()
+(defun my-erlang-project-hook ()
   (set (make-local-variable 'compile-command)
         (format "cd %s; make -k" (eproject-root))))
 
-(add-hook 'erlang-project-file-visit-hook 'mk/erlang-project-hook)
+(add-hook 'erlang-project-file-visit-hook 'my-erlang-project-hook)
+

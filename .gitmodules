@@ -1,0 +1,9 @@
+[submodule "lib/org-mode"]
+	path = lib/org-mode
+	url = git://repo.or.cz/org-mode.git
+[submodule "lib/eproject"]
+	path = lib/eproject
+	url = git://github.com/jrockway/eproject.git
+[submodule "lib/egg"]
+	path = lib/egg
+	url = git://github.com/bogolisk/egg.git
