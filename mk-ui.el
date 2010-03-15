@@ -11,6 +11,7 @@
 
 ;; use y/n instead of yes/no
 (fset 'yes-or-no-p 'y-or-n-p)
+(cua-mode t)
 
 ;; set misc decoration variables
 (custom-set-variables
