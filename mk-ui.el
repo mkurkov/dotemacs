@@ -49,4 +49,10 @@
  '(hl-line ((t (:background "grey20"))))
  '(region  ((t (:background "#463935"))))
  '(cursor  ((t (:background "chocolate4"))))
- )
+
+ '(font-lock-builtin-face ((t (:foreground "LightCoral"))))
+ '(font-lock-comment-face ((t (:foreground "chocolate1" :slant italic))))
+ '(font-lock-preprocessor-face ((t (:foreground "PaleGreen"))))
+ '(font-lock-type-face ((t (:foreground "LightSteelBlue"))))
+)
+
