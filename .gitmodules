@@ -10,3 +10,6 @@
 [submodule "lib/haskell-mode"]
 	path = lib/haskell-mode
 	url = git://github.com/jwiegley/haskell-mode.git
+[submodule "lib/remember"]
+	path = lib/remember
+	url = http://repo.or.cz/r/remember-el.git
