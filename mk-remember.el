@@ -1,5 +1,5 @@
 ;;;  Load Org Remember Stuff
-(add-to-list 'load-path "~/emacs/remember")
+(add-to-list 'load-path "~/emacs/lib/remember")
 (require 'remember)
 (org-remember-insinuate)
 
