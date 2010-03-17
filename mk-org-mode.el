@@ -85,3 +85,12 @@
               ("h" "Habits" tags "STYLE=\"habit\"" ((org-agenda-todo-ignore-with-date nil)
                                                     (org-agenda-todo-ignore-scheduled nil)
                                                     (org-agenda-todo-ignore-deadlines nil))))))
+
+;; Babel/ditaa support
+(add-to-list 'load-path "~/emacs/lib/org-mode/contrib/lisp")
+(require 'org-babel-init)
+
+(require 'org-babel-dot)
+(require 'org-babel-ditaa)
+
+(org-babel-load-library-of-babel)
