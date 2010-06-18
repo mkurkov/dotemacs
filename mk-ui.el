@@ -11,7 +11,10 @@
 
 ;; use y/n instead of yes/no
 (fset 'yes-or-no-p 'y-or-n-p)
-(cua-mode t)
+
+;; cua mode
+(setq cua-enable-cua-keys nil)           ;; don't add C-x,C-c,C-v
+(cua-mode t)                             ;; for rectangles, CUA is nice
 
 ;; set misc decoration variables
 (custom-set-variables
