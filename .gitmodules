@@ -1,15 +1,15 @@
 [submodule "lib/org-mode"]
 	path = lib/org-mode
-	url = http://repo.or.cz/r/org-mode.git
+	url = git://repo.or.cz/org-mode.git
 [submodule "lib/eproject"]
 	path = lib/eproject
-	url = http://github.com/jrockway/eproject.git
+	url = git://github.com/jrockway/eproject.git
 [submodule "lib/egg"]
 	path = lib/egg
-	url = http://github.com/bogolisk/egg.git
+	url = git://github.com/bogolisk/egg.git
 [submodule "lib/haskell-mode"]
 	path = lib/haskell-mode
-	url = http://github.com/jwiegley/haskell-mode.git
+	url = git://github.com/jwiegley/haskell-mode.git
 [submodule "lib/remember"]
 	path = lib/remember
-	url = http://repo.or.cz/r/remember-el.git
+	url = git://repo.or.cz/remember-el.git
