@@ -87,10 +87,19 @@
                                                     (org-agenda-todo-ignore-deadlines nil))))))
 
 ;; Babel/ditaa support
-(add-to-list 'load-path "~/emacs/lib/org-mode/contrib/lisp")
-(require 'org-babel-init)
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((R . t)
+   (ditaa . t)
+   (dot . t)
+   (emacs-lisp . t)
+   (gnuplot . t)
+   (haskell . t)
+   (ocaml . nil)
+   (python . t)
+   (ruby . t)
+   (screen . nil)
+   (sh . t)
+   (sql . nil)
+   (sqlite . t)))
 
-(require 'org-babel-dot)
-(require 'org-babel-ditaa)
-
-(org-babel-load-library-of-babel)
