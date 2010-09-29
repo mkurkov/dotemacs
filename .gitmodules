@@ -13,3 +13,6 @@
 [submodule "lib/remember"]
 	path = lib/remember
 	url = git://repo.or.cz/remember-el.git
+[submodule "lib/magit"]
+	path = lib/magit
+	url = http://github.com/philjackson/magit.git
