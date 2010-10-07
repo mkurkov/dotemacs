@@ -16,3 +16,6 @@
 [submodule "lib/magit"]
 	path = lib/magit
 	url = http://github.com/philjackson/magit.git
+[submodule "lib/cucumber"]
+	path = lib/cucumber
+	url = http://github.com/michaelklishin/cucumber.el.git
