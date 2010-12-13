@@ -21,3 +21,7 @@
 
 ;; run desktop
 (desktop-save-mode 1)
+
+;; save history too
+(savehist-mode 1)
+
