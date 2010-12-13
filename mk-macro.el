@@ -56,3 +56,14 @@ to the previously saved position"
 (global-set-key [f2] 'save-point-only)
 (global-set-key [(meta f2)] 'switch-point-only)
 (global-set-key [f3] 'save-point-and-switch)
+
+
+;; Revert all unchanged buffers (after git checkout for example)
+(defun revert-all-buffers ()
+  "Refreshes all open buffers from their respective files."
+  (interactive)
+  (dolist (buf (buffer-list))
+    (with-current-buffer buf
+      (when (and (buffer-file-name) (not (buffer-modified-p)))
+        (revert-buffer t t t) )))
+  (message "Refreshed open files.") )
