@@ -22,6 +22,7 @@
 (load "~/emacs/mk-dired.el")
 (load "~/emacs/mk-uniquify.el")
 (load "~/emacs/mk-eproject.el")
+(load "~/emacs/mk-tramp.el")
 
 ;; vcs
 (load "~/emacs/mk-git.el")
@@ -37,6 +38,7 @@
 (load "~/emacs/mk-erlang.el")
 (load "~/emacs/mk-haskell.el")
 (load "~/emacs/mk-shell.el")
+(load "~/emacs/mk-ruby.el")
 (load "~/emacs/mk-cucumber.el")
 
 
