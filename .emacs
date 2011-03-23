@@ -42,6 +42,8 @@
 (load "~/emacs/mk-cucumber.el")
 (load "~/emacs/mk-haml.el")
 
+;; IRC
+(load "~/emacs/mk-erc.el")
 
 ;; load saved sessions afterall
 (load "~/emacs/mk-desktop.el")
