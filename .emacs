@@ -7,6 +7,18 @@
 (add-to-list 'load-path "~/emacs/lib")
 (setq custom-file "~/.emacs.d/custom.el")
 
+;; load daemon in noninteractive mode
+(defadvice desktop-restore-file-buffer
+  (around my-desktop-restore-file-buffer-advice)
+  "Be non-interactive while starting a daemon."
+  (if (and (daemonp)
+           (not server-process))
+      (let ((noninteractive t))
+        ad-do-it)
+    ad-do-it))
+
+(ad-activate 'desktop-restore-file-buffer)
+
 ;; appearance tweaking
 (load "~/emacs/mk-user.el")
 (load "~/emacs/mk-lang.el")
