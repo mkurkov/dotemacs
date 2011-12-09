@@ -3,6 +3,9 @@
 ;;; Author      : Mikhail Kurkov <mkurkov@gmail.com>
 ;;; -------------------------------------------------------------------
 
+;; Color theming
+(color-theme-sanityinc-solarized-dark)
+
 ;; date-time display
 (setq display-time-day-and-date t
       display-time-24hr-format t)
@@ -46,19 +49,6 @@
 
 ;; some hooks
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-;; font/faces
-(custom-set-faces
- '(default ((t (:background "grey12" :foreground "grey70" :height 150 ))))
- '(hl-line ((t (:background "grey20"))))
- '(region  ((t (:background "#463935"))))
- '(cursor  ((t (:background "chocolate4"))))
-
- '(font-lock-builtin-face ((t (:foreground "LightCoral"))))
- '(font-lock-comment-face ((t (:foreground "chocolate1" :slant italic))))
- '(font-lock-preprocessor-face ((t (:foreground "PaleGreen"))))
- '(font-lock-type-face ((t (:foreground "LightSteelBlue"))))
-)
 
 ;; shell color mode
 (autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
