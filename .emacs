@@ -8,11 +8,13 @@
 (setq custom-file "~/.emacs.d/custom.el")
 
 ;; load daemon in noninteractive mode
+;; http://stackoverflow.com/questions/4933134/emacs-daemon-startup-freezes-if-file-has-auto-save-data
 (defadvice desktop-restore-file-buffer
   (around my-desktop-restore-file-buffer-advice)
   "Be non-interactive while starting a daemon."
   (if (and (daemonp)
-           (not server-process))
+           (or (not (boundp 'server-process))
+               (not server-process)))
       (let ((noninteractive t))
         ad-do-it)
     ad-do-it))
