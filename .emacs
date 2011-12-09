@@ -21,6 +21,11 @@
 
 (ad-activate 'desktop-restore-file-buffer)
 
+;; package support
+(load "~/emacs/mk-elpa.el")
+(load "~/emacs/mk-el-get.el")
+(load "~/emacs/mk-el-get-packages.el")
+
 ;; appearance tweaking
 (load "~/emacs/mk-user.el")
 (load "~/emacs/mk-lang.el")
