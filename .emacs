@@ -29,7 +29,6 @@
 
 ;; minor modes
 (load "~/emacs/mk-iswitchb.el")
-(load "~/emacs/mk-anything.el")
 (load "~/emacs/mk-ido.el")
 (load "~/emacs/mk-dired.el")
 (load "~/emacs/mk-uniquify.el")
