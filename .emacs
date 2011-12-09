@@ -60,6 +60,3 @@
 
 ;; load saved sessions afterall
 (load "~/emacs/mk-desktop.el")
-
-;; start emacsclient server
-(server-start)
