@@ -39,6 +39,7 @@
          anything
          distel
          haml-mode
+         haskell-mode
          )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -53,7 +53,6 @@
 (load "~/emacs/mk-sqlplus.el")
 (load "~/emacs/mk-j.el")
 ;(load "~/emacs/mk-erlang.el")
-(load "~/emacs/mk-haskell.el")
 (load "~/emacs/mk-shell.el")
 (load "~/emacs/mk-ruby.el")
 
