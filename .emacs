@@ -43,7 +43,6 @@
 (load "~/emacs/mk-tramp.el")
 
 ;; vcs
-(load "~/emacs/mk-git.el")
 (load "~/emacs/mk-darcs.el")
 
 ;; gtd
