@@ -16,6 +16,3 @@
 [submodule "lib/cucumber"]
 	path = lib/cucumber
 	url = http://github.com/michaelklishin/cucumber.el.git
-[submodule "lib/haml-mode"]
-	path = lib/haml-mode
-	url = git://github.com/nex3/haml-mode.git

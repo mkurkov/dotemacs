@@ -58,7 +58,6 @@
 (load "~/emacs/mk-shell.el")
 (load "~/emacs/mk-ruby.el")
 (load "~/emacs/mk-cucumber.el")
-(load "~/emacs/mk-haml.el")
 
 ;; IRC
 (load "~/emacs/mk-erc.el")

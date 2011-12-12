@@ -31,6 +31,7 @@
          erlware-mode
          anything
          distel
+         haml-mode
          )
        (mapcar 'el-get-source-name el-get-sources)))
 
