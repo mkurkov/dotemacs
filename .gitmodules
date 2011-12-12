@@ -13,6 +13,3 @@
 [submodule "lib/remember"]
 	path = lib/remember
 	url = git://repo.or.cz/remember-el.git
-[submodule "lib/cucumber"]
-	path = lib/cucumber
-	url = http://github.com/michaelklishin/cucumber.el.git

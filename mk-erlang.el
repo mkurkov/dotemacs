@@ -19,7 +19,7 @@
 ;; you also need to add the corresponding bit to $HOME/.erlang
 ;; code:add_patha(os:getenv("HOME")++"/jungerl/lib/distel/ebin").
 
-(defvar erlang-erl-path "/opt/local/lib/erlang")
+(defvar erlang-erl-path "/usr/lib/erlang")
 (defvar erlang-esense-path (wild "~/local/lib/erlang/lib/" "esense-"))
 (defvar erlang-distel-path  "~/local/lib/erlang/lib/distel/elisp")
 

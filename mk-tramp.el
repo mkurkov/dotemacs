@@ -5,6 +5,12 @@
              '("\\.lan\\'" "\\`root\\'" "/ssh:%h:"))
 
 (add-to-list 'tramp-default-proxies-alist
+             '("\\.lan\\'" "\\`erlang\\'" "/ssh:%h:"))
+
+(add-to-list 'tramp-default-proxies-alist
+             '("\\.lan\\'" "\\`mandarin\\'" "/ssh:%h:"))
+
+(add-to-list 'tramp-default-proxies-alist
              '("\\erlang.lan\\'" "\\`erlang\\'" "/ssh:%h:"))
 
 (add-to-list 'tramp-default-proxies-alist

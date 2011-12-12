@@ -3,4 +3,4 @@
 (setq auto-mode-alist
       (cons '("\\.ij[rstp]" . j-mode) auto-mode-alist))
 
-(setq j-path "/Users/mk/Applications/j602/bin/")
+;;(setq j-path "/Users/mk/Applications/j602/bin/")
