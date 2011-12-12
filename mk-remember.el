@@ -1,6 +1,6 @@
 ;;;  Load Org Remember Stuff
-(add-to-list 'load-path "~/emacs/lib/remember")
 (require 'remember)
+
 (org-remember-insinuate)
 
 ; I use C-M-r to start org-remember

@@ -7,6 +7,3 @@
 [submodule "lib/egg"]
 	path = lib/egg
 	url = git://github.com/bogolisk/egg.git
-[submodule "lib/remember"]
-	path = lib/remember
-	url = git://repo.or.cz/remember-el.git
