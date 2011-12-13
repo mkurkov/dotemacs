@@ -1,4 +1,3 @@
-(add-to-list 'load-path "~/emacs/lib/org-mode/lisp")
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
 (require 'org-install)
 
@@ -102,4 +101,3 @@
    (sh . t)
    (sql . nil)
    (sqlite . t)))
-
