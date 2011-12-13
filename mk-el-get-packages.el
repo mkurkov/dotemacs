@@ -21,6 +21,8 @@
                :type git
                :url "https://github.com/purcell/color-theme-sanityinc-solarized.git")
 
+	(:name feature-mode :type elpa)
+
         (:name cucumber-mode :type git
                :url "https://github.com/michaelklishin/cucumber.el.git"
                :after (lambda()
