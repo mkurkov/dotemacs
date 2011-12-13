@@ -1,5 +1,4 @@
 ;; load paths
-(add-to-list 'load-path "~/emacs/lib/eproject")
 (require 'eproject)
 (require 'eproject-extras)
 
@@ -34,4 +33,3 @@
         (format "cd %s; make -k" (eproject-root))))
 
 (add-hook 'erlang-project-file-visit-hook 'my-erlang-project-hook)
-
