@@ -19,6 +19,9 @@
 (setq cua-enable-cua-keys nil)           ;; don't add C-x,C-c,C-v
 (cua-mode t)                             ;; for rectangles, CUA is nice
 
+;; line numbering
+(global-linum-mode 1)
+
 ;; set misc decoration variables
 (custom-set-variables
  '(global-font-lock-mode t)
