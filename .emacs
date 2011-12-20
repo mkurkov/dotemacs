@@ -59,5 +59,8 @@
 ;; IRC
 (load "~/emacs/mk-erc.el")
 
+;; Mailing
+(load "~/emacs/mk-gnus.el")
+
 ;; load saved sessions afterall
 (load "~/emacs/mk-desktop.el")
