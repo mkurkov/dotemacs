@@ -55,6 +55,7 @@
 ;(load "~/emacs/mk-erlang.el")
 (load "~/emacs/mk-shell.el")
 (load "~/emacs/mk-ruby.el")
+(load "~/emacs/mk-compilation.el")
 
 ;; IRC
 (load "~/emacs/mk-erc.el")
