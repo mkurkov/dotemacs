@@ -54,6 +54,7 @@
          haml-mode
          haskell-mode
          yaml-mode
+         graphviz-dot-mode
          rspec-mode
          rinari
          )
