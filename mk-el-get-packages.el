@@ -17,6 +17,10 @@
         (:name anything
                :after (lambda () (global-set-key "\C-x\C-a" 'anything)))
 
+        (:name rspec-mode
+               :after (lambda () (global-set-key "\C-c,s" 'rspec-verify-single)))
+
+
         (:name color-theme-sanityinc-solarized
                :type git
                :url "https://github.com/purcell/color-theme-sanityinc-solarized.git")
@@ -32,6 +36,10 @@
         (:name eproject :type git
                :url "https://github.com/jrockway/eproject.git")
 
+        ; временно использую форк с фиксом для емакс 24
+        (:name haml-mode :type git
+               :url "https://github.com/thorstadt/haml-mode.git")
+
         ))
 
 ; list all packages you want installed
@@ -46,6 +54,8 @@
          haml-mode
          haskell-mode
          yaml-mode
+         rspec-mode
+         rinari
          )
        (mapcar 'el-get-source-name el-get-sources)))
 
