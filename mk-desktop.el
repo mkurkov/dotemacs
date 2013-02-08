@@ -8,7 +8,7 @@
 
 ;; desktop paths\files
 (setq desktop-path '("~/.emacs.d/"))
-(setq desktop-dirname '("~/.emacs.d/"))
+(setq desktop-dirname "~/.emacs.d/")
 (setq desktop-base-file-name "emacs-desktop")
 
 (setq-default desktop-save t)
@@ -24,4 +24,3 @@
 
 ;; save history too
 (savehist-mode 1)
-

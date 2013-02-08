@@ -9,20 +9,22 @@
 
 ;; load daemon in noninteractive mode
 ;; http://stackoverflow.com/questions/4933134/emacs-daemon-startup-freezes-if-file-has-auto-save-data
-(defadvice desktop-restore-file-buffer
-  (around my-desktop-restore-file-buffer-advice)
-  "Be non-interactive while starting a daemon."
-  (if (and (daemonp)
-           (or (not (boundp 'server-process))
-               (not server-process)))
-      (let ((noninteractive t))
-        ad-do-it)
-    ad-do-it))
+;(defadvice desktop-restore-file-buffer
+;  (around my-desktop-restore-file-buffer-advice)
+;  "Be non-interactive while starting a daemon."
+;  (if (and (daemonp)
+;           (or (not (boundp 'server-process))
+;               (not server-process)))
+;      (let ((noninteractive t))
+;        ad-do-it)
+;    ad-do-it))
 
-(ad-activate 'desktop-restore-file-buffer)
+;(ad-activate 'desktop-restore-file-buffer)
 
 ;; package support
+
 (load "~/emacs/mk-elpa.el")
+
 (load "~/emacs/mk-el-get.el")
 (load "~/emacs/mk-el-get-packages.el")
 
