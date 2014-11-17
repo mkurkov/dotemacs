@@ -4,7 +4,9 @@
 ;;; -------------------------------------------------------------------
 
 ;; Color theming
-(color-theme-sanityinc-solarized-dark)
+(use-package color-theme-solarized
+   :ensure color-theme
+   :init (load-theme 'solarized-dark t))
 
 ;; date-time display
 (setq display-time-day-and-date t
@@ -14,6 +16,9 @@
 
 ;; use y/n instead of yes/no
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;; don't ask about local variables
+(setq enable-local-variables :safe)
 
 ;; cua mode
 (setq cua-enable-cua-keys nil)           ;; don't add C-x,C-c,C-v

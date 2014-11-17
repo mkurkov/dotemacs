@@ -7,26 +7,9 @@
 (add-to-list 'load-path "~/emacs/lib")
 (setq custom-file "~/.emacs.d/custom.el")
 
-;; load daemon in noninteractive mode
-;; http://stackoverflow.com/questions/4933134/emacs-daemon-startup-freezes-if-file-has-auto-save-data
-;(defadvice desktop-restore-file-buffer
-;  (around my-desktop-restore-file-buffer-advice)
-;  "Be non-interactive while starting a daemon."
-;  (if (and (daemonp)
-;           (or (not (boundp 'server-process))
-;               (not server-process)))
-;      (let ((noninteractive t))
-;        ad-do-it)
-;    ad-do-it))
-
-;(ad-activate 'desktop-restore-file-buffer)
-
 ;; package support
-
 (load "~/emacs/mk-elpa.el")
-
-(load "~/emacs/mk-el-get.el")
-(load "~/emacs/mk-el-get-packages.el")
+(load "~/emacs/mk-use-package.el")
 
 ;; appearance tweaking
 (load "~/emacs/mk-user.el")
@@ -43,21 +26,32 @@
 (load "~/emacs/mk-uniquify.el")
 (load "~/emacs/mk-eproject.el")
 (load "~/emacs/mk-tramp.el")
+(load "~/emacs/mk-move-text.el")
+(load "~/emacs/mk-expand-region")
+(load "~/emacs/mk-ace-jump-mode")
+(load "~/emacs/mk-yasnippet")
 
 ;; vcs
 (load "~/emacs/mk-darcs.el")
+(load "~/emacs/mk-magit")
 
 ;; gtd
 (load "~/emacs/mk-org-mode.el")
 (load "~/emacs/mk-remember.el")
 
 ;; programming
-(load "~/emacs/mk-sqlplus.el")
+(load "~/emacs/mk-sql.el")
 (load "~/emacs/mk-j.el")
-;(load "~/emacs/mk-erlang.el")
+(load "~/emacs/mk-haskell")
+(load "~/emacs/mk-erlang.el")
 (load "~/emacs/mk-shell.el")
 (load "~/emacs/mk-ruby.el")
 (load "~/emacs/mk-compilation.el")
+(load "~/emacs/mk-webdev")
+
+;; editing
+(load "~/emacs/mk-markdown")
+(load "~/emacs/mk-graphviz")
 
 ;; IRC
 (load "~/emacs/mk-erc.el")
@@ -67,3 +61,6 @@
 
 ;; load saved sessions afterall
 (load "~/emacs/mk-desktop.el")
+
+;; server start
+(server-start)

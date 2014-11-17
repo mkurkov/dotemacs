@@ -1,4 +1,5 @@
 ;; load paths
+(use-package eproject :ensure eproject)
 (require 'eproject)
 (require 'eproject-extras)
 
