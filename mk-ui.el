@@ -4,8 +4,10 @@
 ;;; -------------------------------------------------------------------
 
 ;; Color theming
+(use-package color-theme :ensure color-theme)
+
 (use-package color-theme-solarized
-   :ensure color-theme
+   :ensure color-theme-solarized
    :init (load-theme 'solarized-dark t))
 
 ;; date-time display
