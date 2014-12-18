@@ -52,6 +52,7 @@
 ;; editing
 (load "~/emacs/mk-markdown")
 (load "~/emacs/mk-graphviz")
+(load "~/emacs/mk-tex")
 
 ;; IRC
 (load "~/emacs/mk-erc.el")
