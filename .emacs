@@ -53,6 +53,7 @@
 (load "~/emacs/mk-markdown")
 (load "~/emacs/mk-graphviz")
 (load "~/emacs/mk-tex")
+(load "~/emacs/mk-xml")
 (load "~/emacs/mk-string-inflection")
 
 ;; IRC
