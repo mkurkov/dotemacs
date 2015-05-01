@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: -export_type([..]).
+# key: expt
+# binding: direct-keybinding
+# --
+-export_type([${1:t/0}]).
+$0

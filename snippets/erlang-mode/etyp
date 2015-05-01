@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: -type ... :: ... . -export_type([...]).
+# key: etyp
+# binding: direct-keybinding
+# --
+-type $1() :: $2.
+-export_type([$1/0]).
+$0
