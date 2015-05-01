@@ -6,9 +6,15 @@
 ;; Color theming
 (use-package color-theme :ensure color-theme)
 
-(use-package color-theme-solarized
-   :ensure color-theme-solarized
+(setq x-underline-at-descent-line t)
+(setq solarized-emphasize-indicators nil)
+
+(use-package solarized-theme
+   :ensure solarized-theme
    :init (load-theme 'solarized-dark t))
+
+(use-package modeline-posn
+  :ensure modeline-posn)
 
 ;; date-time display
 (setq display-time-day-and-date t
@@ -53,6 +59,11 @@
 )
 
 (setq default-tab-width 4)
+(setq-default tab-width 4)
+(setq tab-width 4)
+(setq tab-stop-list (number-sequence 4 200 4))
+
+
 (setq split-width-threshold nil)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
