@@ -48,6 +48,7 @@
 (load "~/emacs/mk-ruby.el")
 (load "~/emacs/mk-compilation.el")
 (load "~/emacs/mk-webdev")
+(load "~/emacs/mk-typescript")
 
 ;; editing
 (load "~/emacs/mk-markdown")
